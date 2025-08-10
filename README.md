@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfólio Pessoal - João Pedro Freitas
 
-## Getting Started
+![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Next.js](https://img.shields.io/badge/Next.js-15.4.6-black?logo=next.js) ![React](https://img.shields.io/badge/React-19.1.0-blue?logo=react) ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38B2AC?logo=tailwind-css)
 
-First, run the development server:
+Este é o repositório do meu portfólio pessoal, uma aplicação web moderna e totalmente responsiva onde apresento minhas habilidades, projetos e formação. O objetivo é servir como um cartão de visitas digital para recrutadores e para a comunidade de desenvolvimento.
+
+**[Acesse a versão ao vivo aqui!](URL_DO_DEPLOY_AQUI)** ---
+
+## 📸 Screenshot
+
+![Screenshot do Portfólio em modo escuro](public/portifolio.png)
+
+---
+
+## ✨ Funcionalidades
+
+O portfólio foi construído com foco na experiência do usuário e em um design limpo, apresentando as seguintes funcionalidades:
+
+* **Tema Dark/Light:** Alternância de tema suave com `next-themes`, respeitando a preferência do sistema do usuário.
+* **Totalmente Responsivo:** Layout adaptável para uma ótima experiência em desktops, tablets e celulares.
+* **Seções Dinâmicas:**
+    * **Projetos:** Exibição dos meus principais trabalhos, com links para o repositório no GitHub e para a versão ao vivo.
+    * **Sobre Mim:** Uma breve introdução sobre minha jornada e paixão por desenvolvimento.
+    * **Habilidades:** Listagem das minhas principais competências técnicas.
+    * **Formação e Cursos:** Detalhes sobre minha formação acadêmica e cursos complementares.
+    * **Contato:** Formulário funcional para envio de mensagens.
+* **Animações Modernas:** Animações sutis de entrada e hover utilizando `Framer Motion` para uma navegação mais fluida e agradável.
+* **Navegação Suave:** Header fixo com links que rolam suavemente para as seções correspondentes.
+* **Download de CV:** Botão para baixar meu currículo diretamente do site.
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+Este projeto foi desenvolvido utilizando as seguintes tecnologias e ferramentas:
+
+* **Framework:** [Next.js](https://nextjs.org/)
+* **Linguagem:** [TypeScript](https://www.typescriptlang.org/)
+* **Estilização:** [Tailwind CSS](https://tailwindcss.com/)
+* **Biblioteca de Componentes:** [shadcn/ui](https://ui.shadcn.com/)
+* **Animações:** [Framer Motion](https://www.framer.com/motion/)
+* **Ícones:** [Lucide React](https://lucide.dev/)
+* **Notificações (Toast):** [Sonner](https://sonner.emilkowal.ski/)
+* **Gerenciamento de Tema:** [next-themes](https://github.com/pacocoursey/next-themes)
+* **Versionamento:** [Git](https://git-scm.com/) & [GitHub](https://github.com)
+
+---
+
+## 🛠️ Como Executar o Projeto Localmente
+
+Siga os passos abaixo para rodar o projeto na sua máquina.
+
+**Pré-requisitos:**
+* [Node.js](https://nodejs.org/en/) (versão 18 ou superior)
+* [Git](https://git-scm.com/)
 
 ```bash
+# 1. Clone este repositório
+git clone [https://github.com/JoaoPedroFreitas9/My-Portfolio.git](https://github.com/JoaoPedroFreitas9/My-Portfolio.git)
+
+# 2. Navegue até a pasta do projeto
+cd My-Portfolio
+
+# 3. Instale as dependências
+npm install
+
+# 4. Rode o servidor de desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

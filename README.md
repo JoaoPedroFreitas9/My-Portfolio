@@ -4,7 +4,7 @@
 
 Este é o repositório do meu portfólio pessoal, uma aplicação web moderna e totalmente responsiva onde apresento minhas habilidades, projetos e formação. O objetivo é servir como um cartão de visitas digital para recrutadores e para a comunidade de desenvolvimento.
 
-**[Acesse a versão ao vivo aqui!](URL_DO_DEPLOY_AQUI)** ---
+**[Acesse a versão ao vivo aqui!](https://portfolio-joaopedrofreitas.vercel.app/)** ---
 
 ## 📸 Screenshot
 

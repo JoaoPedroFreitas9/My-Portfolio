@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -21,12 +20,19 @@ import {
   ArrowUpRight,
   Github,
   Link as LinkIcon,
-  GraduationCap, 
+  GraduationCap,
 } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Separator } from "@/components/ui/separator";
-import { education } from "@/data/education"; 
+import { education } from "@/data/education";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export default function Home() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -79,7 +85,7 @@ export default function Home() {
               <Button variant="outline" size="lg" asChild>
                 <a
                   href="/currículo - JoãoPedroFreitas - Front-End.pdf"
-                  download="CV_Joao_Pedro_Freitas.pdf"
+                  download="Curriculo_Joao_Pedro_Freitas-Front-end.pdf"
                 >
                   Baixar CV
                 </a>
@@ -91,7 +97,7 @@ export default function Home() {
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <Avatar className="w-48 h-48 border-4 border-primary/10">
+              <Avatar className="w-54 h-54 border-4 border-primary/10">
                 <AvatarImage
                   src="avatar.jpg"
                   alt="Minha foto"
@@ -103,54 +109,60 @@ export default function Home() {
           </div>
         </motion.section>
 
-        {/* PROJETOS */}
+        {/* PROJETOS - AGORA COM CARROSSEL */}
         <motion.section {...sectionAnimation} id="projects">
           <h2 className="text-3xl font-bold mb-8 text-center">Meus Projetos</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <Card className="h-full flex flex-col">
-                  <CardHeader>
-                    <div className="aspect-video relative rounded-md overflow-hidden mb-4">
-                      <Image
-                        src={project.imageUrl}
-                        alt={`Imagem do projeto ${project.title}`}
-                        layout="fill"
-                        objectFit="cover"
-                      />
-                    </div>
-                    <CardTitle>{project.title}</CardTitle>
-                    <CardDescription>{project.techStack}</CardDescription>
-                  </CardHeader>
-                  <CardContent className="flex-grow">
-                    <p className="text-muted-foreground text-sm">
-                      {project.description}
-                    </p>
-                  </CardContent>
-                  <CardFooter className="flex justify-end gap-2">
-                    <Button variant="outline" size="sm" asChild>
-                      <a href={project.githubUrl} target="_blank">
-                        <Github className="w-4 h-4 mr-2" /> GitHub
-                      </a>
-                    </Button>
-                    {project.liveUrl && (
-                      <Button size="sm" asChild>
-                        <a href={project.liveUrl} target="_blank">
-                          <LinkIcon className="w-4 h-4 mr-2" /> Ver Online
-                        </a>
-                      </Button>
-                    )}
-                  </CardFooter>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {projects.map((project, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-1 h-full">
+                    <Card className="h-full flex flex-col">
+                      <CardHeader>
+                        <div className="aspect-video relative rounded-md overflow-hidden mb-4">
+                          <Image
+                            src={project.imageUrl}
+                            alt={`Imagem do projeto ${project.title}`}
+                            layout="fill"
+                            objectFit="cover"
+                          />
+                        </div>
+                        <CardTitle>{project.title}</CardTitle>
+                        <CardDescription>{project.techStack}</CardDescription>
+                      </CardHeader>
+                      <CardContent className="flex-grow">
+                        <p className="text-muted-foreground text-sm">
+                          {project.description}
+                        </p>
+                      </CardContent>
+                      <CardFooter className="flex justify-end gap-2">
+                        <Button variant="outline" size="sm" asChild>
+                          <a href={project.githubUrl} target="_blank">
+                            <Github className="w-4 h-4 mr-2" /> GitHub
+                          </a>
+                        </Button>
+                        {project.liveUrl && (
+                          <Button size="sm" asChild>
+                            <a href={project.liveUrl} target="_blank">
+                              <LinkIcon className="w-4 h-4 mr-2" /> Ver Online
+                            </a>
+                          </Button>
+                        )}
+                      </CardFooter>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </motion.section>
 
         {/* SOBRE MIM */}

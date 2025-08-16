@@ -1,4 +1,3 @@
-
 export interface Project {
   title: string;
   techStack: string;
@@ -15,8 +14,8 @@ export const projects: Project[] = [
     techStack: "Next.js + shadcn/ui + Framer Motion",
     description:
       "Versão moderna e interativa do meu site pessoal para exibir meus trabalhos e habilidades.",
-    imageUrl: "/portifolio.png", 
-    liveUrl: "#", 
+    imageUrl: "/portifolio.png",
+    liveUrl: "#",
     githubUrl: "https://github.com/user/portfolio",
     type: "web",
   },
@@ -38,5 +37,13 @@ export const projects: Project[] = [
     imageUrl: "/terramobile.jpg",
     githubUrl: "https://github.com/JoaoPedroFreitas9/Terra-Mobile",
     type: "mobile",
+  },
+  {
+    title: "Sistema de Pizzaria",
+    techStack: "Next.js + Postgres + Prisma",
+    description: "Sistema de atendiemnto para pizzaria",
+    imageUrl: "/terramobile.jpg",
+    githubUrl: "https://github.com/JoaoPedroFreitas9/Terra-Mobile",
+    type: "web",
   },
 ];

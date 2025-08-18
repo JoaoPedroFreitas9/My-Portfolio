@@ -3,7 +3,7 @@ export interface EducationItem {
   institution: string; // Nome da instituição 
   course: string; // Nome do curso ou formação
   period: string; // Período 
-  description?: string; // Opcional: Uma breve descrição do que eu aprendi
+  description?: string; // Uma breve descrição do que eu aprendi
 }
 
 export const education: EducationItem[] = [

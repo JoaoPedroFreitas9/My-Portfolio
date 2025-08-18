@@ -42,8 +42,8 @@ export const projects: Project[] = [
     title: "Sistema de Pizzaria",
     techStack: "Next.js + Postgres + Prisma",
     description: "Sistema de atendiemnto para pizzaria",
-    imageUrl: "/terramobile.jpg",
-    githubUrl: "https://github.com/JoaoPedroFreitas9/Terra-Mobile",
+    imageUrl: "",
+    githubUrl: "",
     type: "web",
   },
 ];

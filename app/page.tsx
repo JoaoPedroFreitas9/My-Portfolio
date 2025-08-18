@@ -109,7 +109,7 @@ export default function Home() {
           </div>
         </motion.section>
 
-        {/* PROJETOS - AGORA COM CARROSSEL */}
+        {/* PROJETOS  */}
         <motion.section {...sectionAnimation} id="projects">
           <h2 className="text-3xl font-bold mb-8 text-center">Meus Projetos</h2>
           <Carousel

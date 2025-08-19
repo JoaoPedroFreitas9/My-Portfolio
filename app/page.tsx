@@ -189,6 +189,8 @@ export default function Home() {
               <div className="flex flex-wrap gap-2">
                 <Badge variant="secondary">JavaScript (ES6+)</Badge>
                 <Badge variant="secondary">TypeScript</Badge>
+                <Badge variant="secondary">Html</Badge>
+                <Badge variant="secondary">Css</Badge>
                 <Badge variant="secondary">React</Badge>
                 <Badge variant="secondary">Next.js</Badge>
                 <Badge variant="secondary">Node.js</Badge>

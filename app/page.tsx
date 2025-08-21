@@ -237,7 +237,7 @@ export default function Home() {
         {/* CONTATO */}
         <motion.section {...sectionAnimation} id="contact">
           <h2 className="text-3xl font-bold mb-8 text-center">
-            Vamos nos Conectar?
+            Vamos Conversar?
           </h2>
           <div className="max-w-md mx-auto">
             <p className="text-center text-muted-foreground mb-6">

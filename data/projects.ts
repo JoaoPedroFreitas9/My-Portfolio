@@ -40,7 +40,7 @@ export const projects: Project[] = [
   },
   {
     title: "Sistema de Pizzaria",
-    techStack: "Next.js + Postgres + Prisma",
+    techStack: "NextjS + PostgresSQL + Prisma ",
     description: "Sistema de atendiemnto para pizzaria",
     imageUrl: "",
     githubUrl: "",

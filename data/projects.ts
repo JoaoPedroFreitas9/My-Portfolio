@@ -38,12 +38,15 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/JoaoPedroFreitas9/Terra-Mobile",
     type: "mobile",
   },
+
   {
-    title: "Sistema de Pizzaria",
-    techStack: "NextjS + PostgresSQL + Prisma ",
-    description: "Sistema de atendiemnto para pizzaria",
-    imageUrl: "",
-    githubUrl: "",
+    title: "FlixMania",
+    techStack: "React + React Router Dom + Axios + React Toastify",
+    description:
+      "FlixMania é uma aplicação web desenvolvida em React que funciona como um catálogo de filmes interativo",
+    imageUrl: "/FlixMania.png",
+    liveUrl: "https://flixmania.netlify.app/",
+    githubUrl: "https://github.com/JoaoPedroFreitas9/FlixManiaProjeto",
     type: "web",
   },
 ];

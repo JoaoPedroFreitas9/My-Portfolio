@@ -49,4 +49,14 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/JoaoPedroFreitas9/FlixManiaProjeto",
     type: "web",
   },
+  {
+    title: "Site de Previsão do Tempo",
+    techStack: "HTML5 +CSS3 + JavaScript + API OpenWeather",
+    description:
+      "Uma aplicação web simples e com design limpo para consultar a previsão do tempo atual de qualquer cidade do mundo. O projeto utiliza a API da OpenWeatherMap para buscar dados em tempo real e os apresenta de forma clara e intuitiva para o usuário",
+    imageUrl: "/Sitedeclima.png",
+    liveUrl: "https://pixeldotempo.vercel.app/",
+    githubUrl: "https://github.com/JoaoPedroFreitas9/site-previsao-do-tempo",
+    type: "web",
+  },
 ];

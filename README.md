@@ -30,10 +30,6 @@ O portfólio foi construído com foco na experiência do usuário e em um design
 
 ---
 
-Claro, aqui está a seção formatada exatamente como você pediu:
-
----
-
 ### 🚀 Tecnologias Utilizadas
 
 Este projeto foi desenvolvido utilizando as seguintes tecnologias e ferramentas:

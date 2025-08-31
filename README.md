@@ -30,7 +30,11 @@ O portfólio foi construído com foco na experiência do usuário e em um design
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+Claro, aqui está a seção formatada exatamente como você pediu:
+
+---
+
+### 🚀 Tecnologias Utilizadas
 
 Este projeto foi desenvolvido utilizando as seguintes tecnologias e ferramentas:
 
@@ -41,9 +45,9 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias e ferramentas:
 * **Animações:** [Framer Motion](https://www.framer.com/motion/)
 * **Ícones:** [Lucide React](https://lucide.dev/)
 * **Notificações (Toast):** [Sonner](https://sonner.emilkowal.ski/)
+* **Envio de E-mail:** [EmailJS](https://www.emailjs.com/)
 * **Gerenciamento de Tema:** [next-themes](https://github.com/pacocoursey/next-themes)
 * **Versionamento:** [Git](https://git-scm.com/) & [GitHub](https://github.com)
-
 ---
 
 ## 🛠️ Como Executar o Projeto Localmente

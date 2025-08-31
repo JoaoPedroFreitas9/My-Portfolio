@@ -1,5 +1,8 @@
 "use client";
 
+import { useRef } from "react"; // NOVO
+import emailjs from "@emailjs/browser"; // NOVO
+
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -35,11 +38,28 @@ import {
 } from "@/components/ui/carousel";
 
 export default function Home() {
+  const form = useRef<HTMLFormElement>(null);
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    (e.target as HTMLFormElement).reset();
-    toast.success(
-      "Mensagem enviada! Obrigado por entrar em contato, retornarei em breve."
+
+    if (!form.current) return;
+
+    const serviceID = "service_r4cdjkc";
+    const templateID = "template_8mg12yx";
+    const publicKey = "lTgjve_mEwEthZwDj";
+
+    emailjs.sendForm(serviceID, templateID, form.current, publicKey).then(
+      () => {
+        toast.success(
+          "Mensagem enviada! Obrigado por entrar em contato, retornarei em breve."
+        );
+        (e.target as HTMLFormElement).reset();
+      },
+      (error) => {
+        console.log("FAILED...", error.text);
+        toast.error("Ocorreu um erro ao enviar a mensagem. Tente novamente.");
+      }
     );
   };
 
@@ -246,10 +266,16 @@ export default function Home() {
               Estou sempre aberto a novas oportunidades e colaborações. Sinta-se
               à vontade para me enviar uma mensagem.
             </p>
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <Input placeholder="Seu nome" required />
-              <Input placeholder="Seu e-mail" type="email" required />
-              <Textarea placeholder="Sua mensagem" required />
+
+            <form ref={form} onSubmit={handleSubmit} className="space-y-4">
+              <Input placeholder="Seu nome" name="from_name" required />
+              <Input
+                placeholder="Seu e-mail"
+                type="email"
+                name="from_email"
+                required
+              />
+              <Textarea placeholder="Sua mensagem" name="message" required />
               <Button type="submit" className="w-full">
                 Enviar Mensagem
               </Button>

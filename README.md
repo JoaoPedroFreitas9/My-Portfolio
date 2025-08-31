@@ -4,7 +4,6 @@
 
 Este é o repositório do meu portfólio pessoal, uma aplicação web moderna e totalmente responsiva onde apresento minhas habilidades, projetos e formação. O objetivo é servir como um cartão de visitas digital para recrutadores e para a comunidade de desenvolvimento.
 
-**[Acesse a versão ao vivo aqui!](https://portfolio-joaopedrofreitas.vercel.app/)** ---
 
 ## 📸 Screenshot
 
@@ -12,7 +11,7 @@ Este é o repositório do meu portfólio pessoal, uma aplicação web moderna e 
 
 ---
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
 O portfólio foi construído com foco na experiência do usuário e em um design limpo, apresentando as seguintes funcionalidades:
 
@@ -30,7 +29,7 @@ O portfólio foi construído com foco na experiência do usuário e em um design
 
 ---
 
-### 🚀 Tecnologias Utilizadas
+###  Tecnologias Utilizadas
 
 Este projeto foi desenvolvido utilizando as seguintes tecnologias e ferramentas:
 
@@ -46,7 +45,7 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias e ferramentas:
 * **Versionamento:** [Git](https://git-scm.com/) & [GitHub](https://github.com)
 ---
 
-## 🛠️ Como Executar o Projeto Localmente
+## 🛠 Como Executar o Projeto Localmente
 
 Siga os passos abaixo para rodar o projeto na sua máquina.
 

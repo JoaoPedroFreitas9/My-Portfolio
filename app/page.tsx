@@ -117,7 +117,7 @@ export default function Home() {
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <Avatar className="w-54 h-54 border-4 border-primary/10">
+              <Avatar className="w-74 h-74 border-4 border-primary/10">
                 <AvatarImage
                   src="avatar.jpg"
                   alt="Minha foto"

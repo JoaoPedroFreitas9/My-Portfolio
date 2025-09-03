@@ -1,7 +1,7 @@
 "use client";
 
-import { useRef } from "react"; // NOVO
-import emailjs from "@emailjs/browser"; // NOVO
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -217,6 +217,7 @@ export default function Home() {
                 <Badge variant="secondary">Tailwind CSS</Badge>
                 <Badge variant="secondary">shadcn/ui</Badge>
                 <Badge variant="secondary">React Native</Badge>
+                <Badge variant="secondary">PostgreSQL</Badge>
                 <Badge variant="secondary">Git & GitHub</Badge>
               </div>
             </div>

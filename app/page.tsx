@@ -191,10 +191,7 @@ export default function Home() {
           <div className="grid md:grid-cols-5 gap-10">
             <div className="md:col-span-3 space-y-4 text-muted-foreground text-lg">
               <p>
-                Olá! Sou o João Pedro, um desenvolvedor com foco em criar
-                soluções web de alta qualidade. Minha jornada na programação
-                começou em 2022, movida pela curiosidade de entender como a
-                tecnologia poderia transformar ideias em realidade.
+                Oi! Sou o João Pedro. Desde 2022, venho explorando o universo da programação com o objetivo de transformar boas ideias em soluções web funcionais e bem pensadas. Foi a curiosidade que me trouxe até aqui, e é ela que segue impulsionando minha evolução como desenvolvedor.
               </p>
               <p>
                 Desde então, tenho me dedicado a aprofundar meus conhecimentos

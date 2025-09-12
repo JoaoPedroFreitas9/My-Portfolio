@@ -3,7 +3,7 @@ export interface Project {
   techStack: string;
   description: string;
   imageUrl: string; // URL da imagem do projeto
-  liveUrl?: string; // Link para o deploy
+  liveUrl?: string; // Link para do deploy
   githubUrl: string; // Link para o repositório
   type: "web" | "mobile";
 }
@@ -30,6 +30,16 @@ export const projects: Project[] = [
     type: "web",
   },
   {
+    title: "freitasplanejados-web",
+    techStack: "HTML5 + CSS3 + JavaScript ",
+    description:
+      "Calculadora web para geração de orçamentos de móveis planejados, desenvolvida para a Marcenaria Freitas",
+    imageUrl: "/ProjetoMarcenaria.png",
+    liveUrl: "https://freitasplanejados-web.vercel.app/",
+    githubUrl: "https://github.com/JoaoPedroFreitas9/freitasplanejados-web",
+    type: "web",
+  },
+  {
     title: "Terra Manager",
     techStack: "React Native + Expo + NestJS",
     description:
@@ -51,7 +61,7 @@ export const projects: Project[] = [
   },
   {
     title: "Site de Previsão do Tempo",
-    techStack: "HTML5 +CSS3 + JavaScript + API OpenWeather",
+    techStack: "HTML5 + CSS3 + JavaScript + API OpenWeather",
     description:
       "Uma aplicação web simples e com design limpo para consultar a previsão do tempo atual de qualquer cidade do mundo. O projeto utiliza a API da OpenWeatherMap para buscar dados em tempo real e os apresenta de forma clara e intuitiva para o usuário",
     imageUrl: "/Sitedeclima.png",
